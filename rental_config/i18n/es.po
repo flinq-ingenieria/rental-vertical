@@ -54,7 +54,7 @@ msgstr "Configure productos de alquiler con campos extendidos"
 #. module: rental_config
 #: model_terms:ir.ui.view,arch_db:rental_config.res_config_settings_view_form
 msgid "Create project tasks for periodic appointments of product instances"
-msgstr "Crea "
+msgstr "Crea tareas de proyecto para reservas periodicas de instancias de producto"
 
 #. module: rental_config
 #: model:ir.model.fields,field_description:rental_config.field_res_config_settings__display_name
