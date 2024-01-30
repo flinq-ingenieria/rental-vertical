@@ -5,8 +5,8 @@
     "summary": "Import a CSV file from Toll Collect and invoice the costs to customers.",
     "version": "15.0.1.0.0",
     "category": "Rental",
-    "author": "elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/vertical-rental",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
+    "website": "https://github.com/pcastelovigo/rental-vertical",
     "description": """
 This module provides the opportunity to import csv files downloaded from toll collect portal.
 During import it matches the given license plate in csv file with a vehicle product.

@@ -5,8 +5,8 @@
 	 and the aim is to encourage long-term rentals, so important is only the duration of the rental and not the units.
 	""",
     "category": "Rental",
-    "author": "zvERP, elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/vertical-rental",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
+    "website": "https://github.com/pcastelovigo/rental-vertical",
     "version": "15.0.1.0.0",
     "depends": ["base", "rental_pricelist"],
     "data": [],

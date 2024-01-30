@@ -5,7 +5,7 @@
     "summary": "extends the rental_timeline module to show the repair orders in the timeline.",
     "version": "15.0.1.0.0",
     "category": "Rental/Service",
-    "author": "Odoo Community Association (OCA)/Elego Software Solutions GmbH",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
     "description": """
 This module adds the display of repair orders related to rental products to the rental timeline view.
     """,

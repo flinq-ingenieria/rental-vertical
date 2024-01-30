@@ -5,8 +5,8 @@
     "summary": "Manage off-days in rentals on daily basis",
     "version": "15.0.1.0.0",
     "category": "Rental",
-    "author": "elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/vertical-rental",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
+    "website": "https://github.com/pcastelovigo/rental-vertical",
     "description": """
 During short-term rentals over several days or weeks, the customer and the salesman
 agree on so called off-days. On these days the customer still have the rented products

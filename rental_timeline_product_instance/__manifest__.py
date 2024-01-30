@@ -5,7 +5,7 @@
     "summary": "Extends the rental_timeline module to show the product instance fields in the timeline product popup.",
     "version": "15.0.1.0.0",
     "category": "Rental",
-    "author": "Odoo Community Association (OCA)/Elego Software Solutions GmbH",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
     "description": """
 The rental modules may be used to rent arbitrary products or individual product instances identified by serial number.
 In the latter case, product instance-specific information should be displayed in the timeline view, too, which is

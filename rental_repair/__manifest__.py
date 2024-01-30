@@ -7,7 +7,7 @@
 """,
     "version": "15.0.1.0.0",
     "category": "Rental/Service",
-    "author": "Odoo Community Association (OCA)/Elego Software Solutions GmbH",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
     "depends": [
         "project",
         "rental_base",

@@ -20,7 +20,7 @@ No further configuration is needed.
 """,
     "version": "15.0.1.0.0",
     "category": "Rental",
-    "author": "Odoo Community Association (OCA)/Elego Software Solutions GmbH",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
     "depends": [
         "rental_pricelist",
         "sale_product_set",

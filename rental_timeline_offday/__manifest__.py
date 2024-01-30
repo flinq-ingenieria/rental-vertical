@@ -5,7 +5,7 @@
     "summary": "Extends the rental_timeline module to show the offday_number in the timeline popup.",
     "version": "15.0.1.0.0",
     "category": "Rental",
-    "author": "Odoo Community Association (OCA)/Elego Software Solutions GmbH",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
     "description": """
 This module adds the display of the number of 'offdays' in rental orders to the rental timeline view.
 'offdays' are days that are not invoiced within the renting period, for example weekends or holidays.

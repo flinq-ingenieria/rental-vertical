@@ -15,7 +15,7 @@ specific product.
     """,
     "version": "15.0.1.0.0",
     "category": "Rental",
-    "author": "Odoo Community Association (OCA)/Elego Software Solutions GmbH",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
     "usage": """
 This module is automatically installed when all of the following modules are installed in a database:
 

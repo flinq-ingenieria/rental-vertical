@@ -5,8 +5,8 @@
     "summary": "Rental Config simplifies rental module installation",
     "version": "15.0.1.0.0",
     "category": "Rental",
-    "author": "elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://gitlab.elegosoft.com/swrent/rental-vertical",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
+    "website": "https://github.com/pcastelovigo/rental-vertical",
     "description": """
 Rental Config
 

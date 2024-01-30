@@ -6,8 +6,8 @@
     "time uom (Month, Day and Hour).",
     "version": "15.0.1.0.0",
     "category": "Rental",
-    "author": "elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/vertical-rental",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
+    "website": "https://github.com/pcastelovigo/rental-vertical",
     "description": """
 This Module implements a new rental service product for interval pricing under consideration
 of odoo price lists. This enables to rent out products and charge for day interval ranges.

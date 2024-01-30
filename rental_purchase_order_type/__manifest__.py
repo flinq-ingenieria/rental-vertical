@@ -5,8 +5,8 @@
     "summary": "Additional purchase order types for rental use cases: transport orders and repair orders",
     "version": "15.0.1.0.0",
     "category": "Rental/Purchase",
-    "author": "elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/vertical-rental",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
+    "website": "https://github.com/pcastelovigo/rental-vertical",
     "description": """
 This module provides the possibility to distiguish purchase orders by the type 'transport' and 'repair' orders',
 using the module purchase_order_type. It also adds new menu entries for transport and repair vendor (purchase)

@@ -5,8 +5,8 @@
     "version": "15.0.1.0.0",
     "category": "Rental",
     "summary": "Manage rentals with product packs",
-    "author": "elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/vertical-rental",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
+    "website": "https://github.com/pcastelovigo/rental-vertical",
     "description": """
 This module allows to manage rentals with product packs.
 You can define product packs as described in the module product_pack.

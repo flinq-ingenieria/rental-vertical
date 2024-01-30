@@ -4,7 +4,7 @@
     "summary": "This module adds support for the management of transports of rental products.",
     "version": "15.0.1.0.0",
     "category": "Rental",
-    "author": "Odoo Community Association (OCA)/Elego Software Solutions GmbH",
+"author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "description": """
 Rental products are delivered from the rental_in location of the rental company
