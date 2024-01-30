@@ -81,7 +81,7 @@ msgstr "Tipo de contrato"
 #: model:ir.ui.menu,name:rental_contract.menu_customer_top_contracts
 #: model:ir.ui.menu,name:rental_contract.menu_supplier_top_contracts
 msgid "Contracts"
-msgstr "Contratros"
+msgstr "Contratos"
 
 #. module: rental_contract
 #: model:ir.model.fields,field_description:rental_contract.field_contract_order_type__create_uid
