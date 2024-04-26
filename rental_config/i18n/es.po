@@ -39,7 +39,7 @@ msgstr ""
 #. module: rental_config
 #: model_terms:ir.ui.view,arch_db:rental_config.res_config_settings_view_form
 msgid "Configure rental products as product packs"
-msgstr "Configure productos de alquiler como paquetes de producots"
+msgstr "Configure productos de alquiler como paquetes de productos"
 
 #. module: rental_config
 #: model_terms:ir.ui.view,arch_db:rental_config.res_config_settings_view_form
