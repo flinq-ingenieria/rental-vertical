@@ -846,7 +846,7 @@ msgstr "Información del vehículo"
 #. module: rental_toll_collect
 #: model:ir.model.fields,field_description:rental_toll_collect.field_toll_charge_line__weight_class
 msgid "Weight Class"
-msgstr "<span>Tonelaje</span>"
+msgstr "Tonelaje"
 
 #. module: rental_toll_collect
 #: model_terms:ir.ui.view,arch_db:rental_toll_collect.toll_charge_line_invoicing_view
