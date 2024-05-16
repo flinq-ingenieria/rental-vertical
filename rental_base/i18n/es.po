@@ -415,7 +415,7 @@ msgstr "Tipo de pedido"
 #. module: rental_base
 #: model_terms:ir.ui.view,arch_db:rental_base.view_order_form
 msgid "Ordered Rental Time"
-msgstr "Tiempo de alquiler pedido"
+msgstr "Unidades Facturables"
 
 #. module: rental_base
 #: model:ir.ui.menu,name:rental_base.menu_customer_orders
