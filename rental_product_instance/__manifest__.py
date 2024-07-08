@@ -28,6 +28,7 @@ you can save the mileage of vehicles or the operating hours of machines.
     ],
     "data": [
         "security/ir.model.access.csv",
+        "data/res_config.xml",
         "views/product_view.xml",
         "views/instance_operating_data_view.xml",
     ],
