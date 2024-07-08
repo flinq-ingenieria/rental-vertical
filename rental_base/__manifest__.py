@@ -6,7 +6,7 @@
     "category": "Rental",
     "summary": "Manage Rental of Products",
 "author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://github.com/pcastelovigo/rental-vertical",
+    "website": "https://github.com/flinq-ingenieria/rental-vertical",
     "description": """
 Base Module for Rental Management
 

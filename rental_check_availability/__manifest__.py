@@ -6,7 +6,7 @@
     "version": "15.0.1.0.0",
     "category": "Rental",
 "author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://github.com/pcastelovigo/rental-vertical",
+    "website": "https://github.com/flinq-ingenieria/rental-vertical",
     "description": """
 This module activates availability checks on stockable products related to rental services in
 sale orders. In the base functionality only the total amount of products in stock is checked and user is

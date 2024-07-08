@@ -6,7 +6,7 @@
 	""",
     "category": "Rental",
 "author": "zvERP.com, elego Software Solutions GmbH, Odoo Community Association (OCA)",
-    "website": "https://github.com/pcastelovigo/rental-vertical",
+    "website": "https://github.com/flinq-ingenieria/rental-vertical",
     "version": "15.0.1.0.0",
     "depends": ["base", "rental_pricelist"],
     "data": [],
