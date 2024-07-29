@@ -1,16 +1,21 @@
 # Part of rental-vertical See LICENSE file for full copyright and licensing details.
 from odoo import api, models
 from odoo.exceptions import UserError
-from odoo.exceptions import Warning
 
-#https://stackoverflow.com/questions/42950/get-the-last-day-of-the-month
 import datetime
 from datetime import timedelta
 from dateutil.relativedelta import *
+
+#https://stackoverflow.com/questions/42950/get-the-last-day-of-the-month
 def last_day_of_month(any_day):
     next_month = any_day.replace(day=28) + datetime.timedelta(days=4)
     return next_month - datetime.timedelta(days=next_month.day)
 
+def get_quarter(date):
+    return (date.month - 1) // 3 + 1
+
+def get_semester(date):
+    return (date.month - 1) // 6 + 1
 
 class ContractLine(models.Model):
     _inherit = "contract.line"
@@ -72,8 +77,41 @@ class ContractLine(models.Model):
                 offday_count = offday_calc(self,end,start)
                 res.update({"quantity": self.sale_order_line_id.rental_qty * (invoice_period.days - offday_count),}) #relativedelta ya cuenta los dias
                 
+        elif self.recurring_rule_type == "quarterly":
+            if self.recurring_next_date:
+                if get_quarter(self.recurring_next_date) == get_quarter(self.date_end) and self.recurring_next_date.year == self.date_end.year:
+                    end = self.date_end
+                else:
+                    end = start + relativedelta(months=+3)
+
+                invoice_period = (end - start)
+                offday_count = offday_calc(self, end, start)
+                res.update({"quantity": self.sale_order_line_id.rental_qty * (invoice_period.days - offday_count),})
+		
+        elif self.recurring_rule_type == "semesterly":
+            if self.recurring_next_date:
+                if get_semester(self.recurring_next_date) == get_semester(self.date_end) and self.recurring_next_date.year == self.date_end.year:
+                    end = self.date_end
+                else:
+                    end = start + relativedelta(months=+6)
+
+                invoice_period = (end - start)
+                offday_count = offday_calc(self,end,start)
+                res.update({"quantity": self.sale_order_line_id.rental_qty * (invoice_period.days - offday_count),})
+		
+        elif self.recurring_rule_type == "yearly":
+            if self.recurring_next_date:
+                if self.recurring_next_date.year == self.date_end.year:
+                    end = self.date_end
+                else:
+                    end = start + relativedelta(years=+1)
+
+                invoice_period = (end - start)
+                offday_count = offday_calc(self,end,start)
+                res.update({"quantity": self.sale_order_line_id.rental_qty * (invoice_period.days - offday_count),})
+
 
         else:
-            raise Warning('Module will calculate monthy last day only, insert values manually')
+            raise UserError('Module will calculate monthy last day only, insert values manually')
 
         return res
