@@ -1,7 +1,7 @@
 # Part of rental-vertical See LICENSE file for full copyright and licensing details.
 
 from odoo import api, fields, models
-
+from odoo.exceptions import UserError
 
 class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
@@ -24,7 +24,10 @@ class SaleOrderLine(models.Model):
     @api.onchange("date_start", "date_end", "product_uom")
     def onchange_contract_date_start_end(self):
         if self.date_start and self.date_end and not self.rental:
-            number = self._get_number_of_time_unit()
+            try:
+                number = self._get_number_of_time_unit()
+            except AttributeError:
+                raise UserError("Product is a contract and is not meant to be sold. Use rental app.")
             if number:
                 self.product_uom_qty = number
 
