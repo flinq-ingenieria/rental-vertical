@@ -66,6 +66,8 @@ class SaleOrder(models.Model):
             rentals.unlink()
         return super().unlink()
 
+    order2_line = fields.One2many('sale.order.line', 'order_id', string='Order Lines',
+                                 readonly=False)
 
 class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
