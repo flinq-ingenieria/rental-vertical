@@ -223,6 +223,7 @@ class ProductProduct(models.Model):
             .create_rental_product()
         )
         rental_service = self.browse(res["res_id"])
+        rental_service.sale_ok = False
         name = rental_service._get_rental_service_name(
             rental_type,
             product.name,

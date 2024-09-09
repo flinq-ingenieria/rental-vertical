@@ -44,6 +44,8 @@ class RentalStockCommon(common.TransactionCase):
         )
 
         rental_service = self.env["product.product"].browse(res["res_id"])
+        rental_service.sale_ok = False
+
         rental_service.write(
             {
                 "uom_id": self.uom_day.id,
