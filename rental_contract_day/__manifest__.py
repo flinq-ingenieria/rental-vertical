@@ -29,6 +29,7 @@ is automatically created.
     "depends": [
         "rental_contract",
         "rental_pricelist",
+        "rental_offday"
     ],
     "data": [],
     "demo": [],
