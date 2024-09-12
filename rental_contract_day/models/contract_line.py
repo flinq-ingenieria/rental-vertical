@@ -12,13 +12,14 @@ class ContractLine(models.Model):
     def _prepare_invoice_line(self, move_form):
         def offday_calc(self, end, start):
             offday_count = 0
+            if self.env['ir.module.module'].search([('name', '=', 'rental_offday'), ('state', '=', 'installed')]):
+                for offday in self.sale_order_line_id.fixed_offday_ids:
+                    if start <= offday.date <= end:
+                        offday_count = offday_count + 1
+                for offday in self.sale_order_line_id.add_offday_ids:
+                    if start <= offday.date <= end:
+                        offday_count = offday_count + 1
 
-            for offday in self.sale_order_line_id.fixed_offday_ids:
-                if start <= offday.date <= end:
-                    offday_count = offday_count + 1
-            for offday in self.sale_order_line_id.add_offday_ids:
-                if start <= offday.date <= end:
-                    offday_count = offday_count + 1
             return offday_count
 
         self.ensure_one()
